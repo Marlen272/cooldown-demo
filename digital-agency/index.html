@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Digital Agency landing page — HTML, CSS, JS only." />
+  <title>NovaWave — Digital Agency</title>
+
+  <!-- Base + components -->
+  <link rel="stylesheet" href="./assets/css/base.css" />
+
+  <!-- Theme files (loaded together; active theme via [data-theme] variables) -->
+  <link rel="stylesheet" href="./assets/css/themes/dark.css" />
+  <link rel="stylesheet" href="./assets/css/themes/light.css" />
+</head>
+
+<body>
+  <header class="site-header" id="top">
+    <div class="container">
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="brand" href="#top">
+          <span class="logo" aria-hidden="true"></span>
+          <span>NovaWave</span>
+        </a>
+
+        <div class="nav-links" aria-label="Main menu">
+          <a href="#services" data-i18n="nav.services">Services</a>
+          <a href="#about" data-i18n="nav.about">About</a>
+          <a href="#contact" data-i18n="nav.contact">Contact</a>
+        </div>
+
+        <div class="nav-cta">
+          <!-- Theme toggle -->
+          <button class="toggle-btn" id="themeBtn" type="button" aria-label="Toggle theme">
+            <span class="toggle-icon" aria-hidden="true">◐</span>
+            <span id="themeLabel">Dark</span>
+          </button>
+
+          <!-- Language toggle -->
+          <button class="toggle-btn" id="langBtn" type="button" aria-label="Switch language">
+            <span class="lang-dot" aria-hidden="true"></span>
+            <span id="langLabel">EN</span>
+          </button>
+
+          <a class="btn secondary" href="#contact" data-i18n="nav.quote">Get a quote</a>
+
+          <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </button>
+        </div>
+      </nav>
+
+      <div class="mobile-panel" id="mobilePanel" aria-label="Mobile menu">
+        <a href="#services" data-i18n="nav.services">Services</a>
+        <a href="#about" data-i18n="nav.about">About</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <section aria-label="Hero">
+          <span class="pill">
+            <span aria-hidden="true">💼</span>
+            <span data-i18n="hero.pill">Digital Agency • UI/UX • Web Development</span>
+          </span>
+
+          <h1 data-i18n="hero.title">Build a clean, fast and modern web presence for your business.</h1>
+          <p data-i18n="hero.desc">
+            NovaWave helps startups and small teams launch high-quality websites — focused on clarity, performance, and conversion.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn" href="#contact" data-i18n="hero.ctaPrimary">Start a project</a>
+            <a class="btn secondary" href="#services" data-i18n="hero.ctaSecondary">View services</a>
+          </div>
+
+          <div class="hero-stats" aria-label="Highlights">
+            <div class="stat"><b data-i18n="hero.stat1.value">+48%</b><span data-i18n="hero.stat1.label">avg. conversion uplift</span></div>
+            <div class="stat"><b data-i18n="hero.stat2.value">2–3 weeks</b><span data-i18n="hero.stat2.label">delivery for MVP sites</span></div>
+            <div class="stat"><b data-i18n="hero.stat3.value">90+</b><span data-i18n="hero.stat3.label">performance score focus</span></div>
+          </div>
+        </section>
+
+        <aside class="hero-art" aria-label="Preview card">
+          <div class="glow" aria-hidden="true"></div>
+
+          <div class="mock">
+            <div class="mock-top">
+              <div class="dots" aria-hidden="true">
+                <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+              </div>
+              <small data-i18n="hero.mockTitle">Project dashboard</small>
+              <small data-i18n="hero.mockStatus">Live</small>
+            </div>
+
+            <div class="mock-body">
+              <div class="tile">
+                <h4 data-i18n="hero.tile1.title">Landing Page</h4>
+                <p data-i18n="hero.tile1.desc">Clean sections, CTA flow, responsive layout.</p>
+                <div class="bar" aria-hidden="true"><i style="width:64%"></i></div>
+              </div>
+
+              <div class="tile">
+                <h4 data-i18n="hero.tile2.title">Brand System</h4>
+                <p data-i18n="hero.tile2.desc">Typography, colors, components, consistency.</p>
+                <div class="bar" aria-hidden="true"><i style="width:72%"></i></div>
+              </div>
+
+              <div class="tile">
+                <h4 data-i18n="hero.tile3.title">SEO Basics</h4>
+                <p data-i18n="hero.tile3.desc">Semantic HTML, meta, speed optimizations.</p>
+                <div class="bar" aria-hidden="true"><i style="width:58%"></i></div>
+              </div>
+
+              <div class="tile">
+                <h4 data-i18n="hero.tile4.title">Analytics</h4>
+                <p data-i18n="hero.tile4.desc">Track events, test copy, improve conversions.</p>
+                <div class="bar" aria-hidden="true"><i style="width:66%"></i></div>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <section id="services" class="section services">
+    <div class="container">
+      <h2 class="section-title" data-i18n="services.title">Services that move the needle</h2>
+      <p class="section-subtitle" data-i18n="services.subtitle">
+        Practical deliverables for freelance and agency-style work — perfect for a frontend developer portfolio.
+      </p>
+
+      <div class="grid-3" role="list">
+        <article class="card service" role="listitem">
+          <div class="icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+              <path d="M4 7h16M4 12h10M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 data-i18n="services.card1.title">UI/UX Design</h3>
+          <p data-i18n="services.card1.desc">Minimal interfaces with clear hierarchy and readable typography.</p>
+          <ul>
+            <li data-i18n="services.card1.li1">Wireframes → polished UI</li>
+            <li data-i18n="services.card1.li2">Component-based layout</li>
+            <li data-i18n="services.card1.li3">Accessible patterns</li>
+          </ul>
+        </article>
+
+        <article class="card service" role="listitem">
+          <div class="icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+              <path d="M8 7l-4 5 4 5M16 7l4 5-4 5M14 6l-4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 data-i18n="services.card2.title">Frontend Development</h3>
+          <p data-i18n="services.card2.desc">Responsive landing pages with clean HTML, CSS, and just enough JS.</p>
+          <ul>
+            <li data-i18n="services.card2.li1">Semantic HTML5</li>
+            <li data-i18n="services.card2.li2">Flexbox / Grid</li>
+            <li data-i18n="services.card2.li3">Performance-first</li>
+          </ul>
+        </article>
+
+        <article class="card service" role="listitem">
+          <div class="icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+              <path d="M12 20V10M7 20V4M17 20v-8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 data-i18n="services.card3.title">SEO & Optimization</h3>
+          <p data-i18n="services.card3.desc">Solid SEO basics + speed improvements that help discoverability.</p>
+          <ul>
+            <li data-i18n="services.card3.li1">Meta + structure</li>
+            <li data-i18n="services.card3.li2">Core Web Vitals mindset</li>
+            <li data-i18n="services.card3.li3">Content guidance</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="card about-box">
+          <h2 class="section-title" data-i18n="about.title">About NovaWave</h2>
+          <p class="section-subtitle" data-i18n="about.subtitle">
+            A small digital team building modern websites with a product mindset: clear messaging, clean UI, maintainable code.
+          </p>
+          <p data-i18n="about.desc">
+            This project is intentionally framework-free. It shows strong fundamentals: structure, responsiveness, and readable CSS/JS.
+          </p>
+        </div>
+
+        <div class="about-points">
+          <div class="point">
+            <b data-i18n="about.p1.title">Transparent process</b>
+            <span data-i18n="about.p1.desc">Kickoff → design → build → launch, with clear milestones.</span>
+          </div>
+          <div class="point">
+            <b data-i18n="about.p2.title">Clean code standards</b>
+            <span data-i18n="about.p2.desc">Reusable classes, accessible markup, and tidy file structure.</span>
+          </div>
+          <div class="point">
+            <b data-i18n="about.p3.title">Business-first thinking</b>
+            <span data-i18n="about.p3.desc">We prioritize clarity and conversion over visual noise.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact">
+    <div class="container">
+      <h2 class="section-title" data-i18n="contact.title">Let’s talk</h2>
+      <p class="section-subtitle" data-i18n="contact.subtitle">
+        Demo form (no backend). Minimal JS handles validation and a friendly success toast.
+      </p>
+
+      <div class="contact-wrap">
+        <div class="card contact-card">
+          <h3 class="contact-title" data-i18n="contact.cardTitle">Contact details</h3>
+          <p class="contact-text" data-i18n="contact.cardDesc">Replace placeholders with your email/socials.</p>
+
+          <div class="contact-meta">
+            <div class="meta"><b data-i18n="contact.emailLabel">Email:</b> hello@novawave.studio</div>
+            <div class="meta"><b data-i18n="contact.locationLabel">Location:</b> Remote / Worldwide</div>
+            <div class="meta"><b data-i18n="contact.availLabel">Availability:</b> New projects this month</div>
+          </div>
+        </div>
+
+        <form class="card form" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="field">
+              <label for="name" data-i18n="form.nameLabel">Name</label>
+              <input id="name" name="name" type="text" placeholder="Your name" required minlength="2" />
+            </div>
+
+            <div class="field">
+              <label for="email" data-i18n="form.emailLabel">Email</label>
+              <input id="email" name="email" type="email" placeholder="you@email.com" required />
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="subject" data-i18n="form.subjectLabel">Subject</label>
+            <input id="subject" name="subject" type="text" placeholder="Landing page, redesign, etc." required minlength="3" />
+          </div>
+
+          <div class="field">
+            <label for="message" data-i18n="form.messageLabel">Message</label>
+            <textarea id="message" name="message" placeholder="Tell me about your goals and timeline..." required minlength="10"></textarea>
+          </div>
+
+          <div class="form-actions">
+            <button class="btn" type="submit" data-i18n="form.submit">Send message</button>
+            <span id="formHint" class="form-hint"></span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="brand" aria-label="Footer brand">
+          <span class="logo" aria-hidden="true"></span>
+          <div class="footer-brand-text">
+            <strong>NovaWave</strong>
+            <small>© <span id="year"></span> <span data-i18n="footer.rights">All rights reserved.</span></small>
+          </div>
+        </div>
+
+        <div class="footer-links" aria-label="Footer links">
+          <a href="#services" data-i18n="nav.services">Services</a>
+          <a href="#about" data-i18n="nav.about">About</a>
+          <a href="#contact" data-i18n="nav.contact">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script type="module" src="./assets/js/main.js"></script>
+</body>
+</html>

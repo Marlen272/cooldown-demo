@@ -1,0 +1,19 @@
+.grid-3{ display:grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+.service{ padding: 18px; }
+
+.icon{
+  width: 44px; height: 44px;
+  border-radius: 14px;
+  display:grid;
+  place-items:center;
+  border: 1px solid var(--border);
+  background: var(--panel);
+  margin-bottom: 12px;
+}
+
+.service h3{ margin: 0 0 6px; letter-spacing: -.02em; }
+.service p{ margin: 0 0 12px; color: var(--muted); }
+.service ul{ margin: 0; padding-left: 18px; color: var(--muted); }
+.service li{ margin: 6px 0; }
+
+@media (max-width: 760px){ .grid-3{ grid-template-columns: 1fr; } }

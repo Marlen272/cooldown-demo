@@ -1,0 +1,23 @@
+html[data-theme="dark"]{
+  --bg:
+    radial-gradient(900px 600px at 20% 0%, rgba(124,92,255,.35), transparent 55%),
+    radial-gradient(700px 500px at 90% 10%, rgba(34,211,238,.25), transparent 60%),
+    radial-gradient(900px 700px at 50% 100%, rgba(124,92,255,.20), transparent 60%),
+    #0b0f19;
+
+  --text: rgba(255,255,255,.92);
+  --muted: rgba(255,255,255,.70);
+  --border: rgba(255,255,255,.12);
+
+  --card-bg: linear-gradient(180deg, rgba(255,255,255,.07), rgba(255,255,255,.04));
+  --pill-bg: rgba(255,255,255,.04);
+
+  --brand: rgba(124,92,255,.95);
+  --brand2: rgba(34,211,238,.75);
+
+  --btn-text: #081018;
+  --btn-secondary-bg: rgba(255,255,255,.06);
+
+  --header-bg: rgba(11,15,25,.55);
+  --panel: rgba(255,255,255,.05);
+}
